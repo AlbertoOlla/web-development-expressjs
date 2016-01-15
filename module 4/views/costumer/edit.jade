@@ -1,0 +1,14 @@
+doctype
+html
+  head
+    title Costumer
+  body
+    h1 Costumer Edit id: '#{costumer._id}'
+    form(id='form', method='post', action='/costumer/'+'#{costumer._id}'+'/edit')
+      name
+      input(type='text', id='name', name='name',value='#{costumer.name}')
+
+      email
+      input(type='text', id='email', name='email',value='#{costumer.email}')
+
+      input(type='submit',value='Edit Costumer')

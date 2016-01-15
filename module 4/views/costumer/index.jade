@@ -1,0 +1,14 @@
+doctype
+html
+  head
+    title Costumer
+  body
+    h1 Costumer index<br><br>
+
+    ul
+    each item in costumers
+      a(href='/costumer/'+ item._id ) Detail
+      a(href='/costumer/'+ item._id+ '/edit' ) Edit
+      li Username: #{item.name}, email: #{item.email}
+
+    a(href='/costumer/create') create new
